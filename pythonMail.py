@@ -12,7 +12,6 @@ msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
 
-
 def getBody(filename):
     with open(str(filename),'r') as myfile:
          data=myfile.read().replace('\n', '')
